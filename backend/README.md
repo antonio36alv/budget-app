@@ -26,13 +26,13 @@
 
 ### Entities + Columns, Omitting ID
 - User
-    - Name, Username, Password, 
+    - Username, Password, Salt, FirstName, LastName, 
 - Income
     - UserID [FK], Name, Type, Money, Last Date of Income, Date of next expected income, Regularity Interval
-- Expense
+- Expense - DID NOT IMPLEMENT, REDUNDANT
     - UserID [FK], Name, Type, Fee, Date Last Charged, Date of next expected charge, Regularity Interval
 - Goals
-    - UserID [FK], Name, Type, Total, Regularity Interval, Commitment Interval,
+    - UserID [FK], Name, Type, Total, Commitment Interval,
         - Commitment Interval -> Goal is once + done, yearly, monthly.
 - Money Store
     - UserID [FK], Name, Type,
